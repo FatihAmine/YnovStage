@@ -1,10 +1,9 @@
 
-import "./App.css";
 import React from "react";
 
-export default function App() {
+export default function Sign() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center">
+    <div className="relative min-h-screen flex items-center justify-center bg-Lgreen">
       {/* Vertical Line */}
          <div className="hidden lg:block absolute inset-y-0 left-1/2 w-[2px] bg-white transform -translate-x-1/2"></div>    
          <div className="flex items-center justify-center w-full px-4">
@@ -50,12 +49,12 @@ export default function App() {
               <label htmlFor="agree" className="text-sm">I agree to the terms and conditions</label>
             </div>
             <div className="flex justify-center">
-              <button className="mt-4 rounded-[20px] bg-Lgray p-2 px-[80px] text-white opacity-60 hover:bg-Lgray hover:opacity-100">
+              <button className="mt-4 rounded-[20px] bg-Lgray p-2 px-[80px] text-white opacity-60 hover:bg-Lgray hover:opacity-100 ">
                 Sign In
               </button>
             </div>
             <div className="flex justify-center">
-              <p>Already have an account? <span className="text-Lgreen">Sign in instead</span></p>
+              <p>Already have an account? <span className="text-Lgreen"> <a href="./Login">Login in instead</a></span></p>
             </div>
           </div>
         </div>
@@ -104,7 +103,8 @@ export default function App() {
                 </button>
               </div>
               <div className="flex justify-center">
-              <p>Already have an account? <span className="text-Lgreen">Sign in instead</span></p>
+              <p>Already have an account?</p>
+              <a className="text-Lgreen">Login in instead</a>
             </div>
             </div>
           </div>
